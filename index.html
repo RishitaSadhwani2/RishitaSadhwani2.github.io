@@ -155,6 +155,7 @@
     background: var(--accent-soft); padding: 7px 11px; border-radius: 999px; white-space: nowrap;
   }
   .card .sub { font-size: 14px; color: var(--faint); margin-top: 4px; }
+  .card .sub .me { color: var(--text); font-weight: 600; }
   .card ul { list-style: none; margin-top: 14px; }
   .card li { position: relative; padding-left: 20px; font-size: 15px; margin-bottom: 8px; }
   .card li::before {
@@ -292,7 +293,7 @@
       <div class="about-grid">
         <div>
           <p>I'm a software engineer who enjoys the unglamorous parts of systems: the retry logic, the dead-letter queue, the deployment pipeline that means nobody gets paged at 2 a.m. For <strong>2+ years</strong> I've shipped production <strong>Spring Boot microservices</strong> and cloud-native systems on <strong>AWS and Azure</strong>.</p>
-          <p>At <strong>NEC Software Solutions</strong> I helped break legacy monoliths into a dozen-plus microservices and built self-healing error-handling workflows. More recently, during my Master's at <strong>Arizona State University</strong>, I've worked on <strong>AI interpretability research</strong>, using sparse autoencoders to help people understand <em>why</em> a model fails.</p>
+          <p>At <strong>NEC Software Solutions</strong> I helped break legacy monoliths into a dozen-plus microservices and built self-healing error-handling workflows. More recently, during my Master's at <strong>Arizona State University</strong>, I've worked on <strong>AI interpretability research</strong> for a thesis project in human-centered AI, using sparse autoencoders to help people understand <em>why</em> a model fails. I also co-authored a systematic review on robot-learning data collection, now <strong>under review at HRI 2027</strong>.</p>
           <p>I'm an <strong>AWS Certified Solutions Architect – Associate</strong>, and I like building products that help people. Recent examples are an emotional-wellness platform and an accessibility assistant for people who are visually impaired.</p>
         </div>
         <div class="stats">
@@ -346,19 +347,34 @@
   <section class="page" id="research">
     <div class="inner">
       <p class="page-label reveal">04 · Research</p>
-      <h2 class="title reveal">Making AI explainable</h2>
+      <h2 class="title reveal">Research &amp; publications</h2>
+      <div class="stack">
       <article class="card reveal">
         <div class="card-head">
-          <h3>AI Interpretability Research <span class="at">· Arizona State University</span></h3>
+          <h3>Interpretability of LLM Planning via Sparse Autoencoders <span class="at">· Arizona State University</span></h3>
           <span class="when">Nov 2025 — May 2026</span>
         </div>
-        <p class="sub">Tempe, AZ · Research Volunteer</p>
+        <p class="sub">Tempe, AZ · Research Volunteer on Avikam Jha's M.S. thesis in human-centered AI</p>
         <ul>
           <li><em>LLM feature engineering:</em> built a scalable SAELens pipeline that extracts <em>32,000+ latent features</em> from sparse autoencoders, reaching <em>88% labeling accuracy</em> through LLM-driven summarization of activations.</li>
           <li><em>Human-in-the-loop studies:</em> ran experiments across <em>100+ AI planning trials</em>. SAE-based explanations <em>improved human failure-prediction accuracy 35%</em> over attention-map baselines.</li>
         </ul>
         <div class="tags"><span class="tag">Python</span><span class="tag">SAELens</span><span class="tag">Sparse Autoencoders</span><span class="tag">LLMs</span><span class="tag">HCI</span></div>
       </article>
+
+      <article class="card reveal">
+        <div class="card-head">
+          <h3>Robotics Data Collection Modality Survey <span class="at">· HRI 2027</span></h3>
+          <span class="when">Under review</span>
+        </div>
+        <p class="sub">A. Jha, <strong class="me">R. Sadhwani</strong> and L. Sanneman · Submitted to ACM/IEEE HRI 2027, Theory and Methods</p>
+        <ul>
+          <li>A PRISMA systematic review that screened <em>685 records</em> down to <em>27 studies (392 participants)</em> comparing teleoperation, wearable capture and human-video data collection for robot learning.</li>
+          <li>Contributes a <em>taxonomy of data collection modalities</em> and an analysis of <em>nine open research gaps</em>.</li>
+        </ul>
+        <div class="tags"><span class="tag">HRI</span><span class="tag">Systematic Review</span><span class="tag">PRISMA</span><span class="tag">Robot Learning</span></div>
+      </article>
+      </div>
     </div>
   </section>
 
